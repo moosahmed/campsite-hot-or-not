@@ -234,7 +234,7 @@ def station_to_campsite(rdd):
 
 if __name__ == '__main__':
     config = configparser.ConfigParser()
-    config.read("s3_spark.cfg")
+    config.read("/spark/pyconf/s3_spark.cfg")
 
     # Make dict of station locations available to all nodes
     STATION_LOCATIONS = get_station_locations_from_file("stations_to_nearby_campgrounds.json")
